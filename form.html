@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<title>HTML form</title>
+
+		<style>
+		span.color {color:red;}
+		</style>
+
+	</head>
+
+	<body bgcolor="#E6E6FA">
+
+		<form>
+
+			<h1 align="center">HTML form exercise</h1>
+			<p><span class="color">Please note:</span> This Example demonstrate how HTML forms can be used. Submit button should submit the button and reset button should reset the form(revert the changes in form feilds). The form layout should be the same as below:
+			<h3>Contact form</h3>
+			<table>
+				<tr>
+					<td>Your name*:</td>
+					<td><input type="text" name="name" required></td>
+				</tr>
+				<tr>
+					<td>E-mail*:</td>
+					<td><input type="email" name="email"required></td>
+				</tr>
+				<tr>
+					<td>Phone number:</td>
+					<td><input type="tel" name="phone"></td>
+				</tr>
+				<tr>
+					<td>Website*:</td>
+					<td><input type="url" name="website" value="http://" required></td>
+				</tr>
+			</table>
+			<br>
+			Comments*:<br>
+			<textarea name="message" rows="8" cols="40" required>
+			</textarea><br>
+			<br>
+			<h3>Text field</h3>
+			Your name:<input type="text" name="name1"><br>
+			<h3>Password field</h3>
+			Password:<input type="password" name="psw"><br>
+			<br>
+			<h3>Radio buttons</h3>
+			<p>Do you like pizza?</p>
+			<input type="radio" name="ans" value="yes" checked>Yes<br>
+			<input type="radio" name="ans" value="no">No<br>
+			<input type="radio" name="ans" value="maybe">Maybe<br>
+			<input type="radio" name="ans" value="never">Never tried<br>
+
+			<h3>Check Box</h3>
+			<input type="checkbox" name="check" value="test">Check this box if you like our service
+			<h3>Text area</h3>
+			<p>Anything you would like to say?</p>
+			<textarea name="msg1" rows="5" cols="60">
+			</textarea>
+			<h3>I Like</h3>
+			<select name="vegetables" multiple>
+				<option value="mushrooms">mushrooms</option>
+				<option value="green peppers">green peppers</option>
+				<option value="onions">onions</option>
+				<option value="tomatoes">tomatoes</option>
+				<option value="olives">olives</option>
+			</select>
+			<h3>Menu</h3>
+			<p>Your favorite color:</p>
+			<select name="color">
+				<option value="red">red</option>
+				<option value="yellow">yellow</option>
+				<option value="black">black</option>
+				<option value="pink">pink</option>
+			</select>
+			<h3>Attach file</h3>
+			<input type="file" name="file" multiple>
+			<h3>Buttons</h3>
+			<input type="submit" value="Sumbit">
+			<input type="reset" value="Reset">
+
+		</form>
+
+	</body>
+</html>
